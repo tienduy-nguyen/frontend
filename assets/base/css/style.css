@@ -15,15 +15,15 @@ body {
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .demo-container{
-  position: relative;
-  z-index: 999;
-  margin-top: 50px;
-  margin-left: 50px;
+  position: absolute;
   display: flex;
   flex-direction: column;
+  left: 5%;
+  top: 10%;
 }
 
 .demo-container__btn{
@@ -37,25 +37,19 @@ body {
   outline: none;
   overflow: hidden;
   position: relative;
+  background-color: #5A6074;
+  padding: 17px 10px;
+  box-shadow: 0 5px 15px rgba(41, 53, 56, 0.2);
+  border-radius: 5px;
+}
+
+.demo-container__link {
+  position: relative; 
+  z-index: 1;
+  text-decoration: none;
   color: #fff;
   font-weight: 700;
   font-size: 15px;
-  background-color: #5A6074;
-  padding: 17px 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
-  border-radius: 5px;
-}
-.demo-container__link{
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-
-}
-
-.demo-container__btn a {
-  position: relative; 
-  z-index: 1;
 }
 
 .demo-container__btn:after {
@@ -63,28 +57,17 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  height: 490%;
-  width: 140%;
+  height: 600%;
+  width: 200%;
   background: #78c7d2;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  border-radius: 5px;
 
 }
 
 .demo-container__btn:hover:after {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
-
-.link {
-  font-size: 20px;
-  margin-top: 30px;
-}
-
-.link a {
-  color: #000;
-  font-size: 25px; 
 }
