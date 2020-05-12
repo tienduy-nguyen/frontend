@@ -5,29 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/base/css/base.css">
+    <link rel="stylesheet" href="./assets/base/css/grid.css">
     <link rel="stylesheet" href="./assets/base/css/style.css">
+    <link rel="stylesheet" href="./assets/base/css/bootstrap.css">
     <link rel="icon" href="./assets/base/img/logo.png">
     <title>Front-End</title>
 </head>
 
 <body>
-    <div id="particles-js">
-        <div class="app demo-container">
-            <button type="button" class ='demo-container__btn'>
-                <a class = 'demo-container__link' href="./demo/f8-shop/index.html">Demo Shop Home page</a>
-            </button>
-            <button type="button" class ='demo-container__btn'>
-                <a class = 'demo-container__link' href="">Demo Landing page</a>
-            </button>
-        </div>
-    </div>
+    <div class="app" id="particles-js">
+        <div class="grid wide">
+            <div class="row welcome">
+                    <h1>Hi, welcome to my demo website!</h1>
+                    <hr>
+            </div>
+            <div class="row demo-container">
+                <div class="col m-3 c-6 l-2">
+                    <div class="card card-block">
+                        <div class="image-container" style="background-image: url('./assets/base/img/home-shop.png');">
+                        </div>
+                        <div class="cart-content">
+                            <h5 class="card-title mt-3 mb-3">Home Shop</h5>
+                            <p class="card-text">This is demo home page of shopping web site using only html & css.
+                            </p>
+                            <div class="demo-container_wrap">
+                                <button type="button" class='demo-container__btn'>
+                                    <a class='demo-container__link'
+                                        href="https://tienduy-nguyen.github.io/frontend/demo/f8-shop">Live Demo</a>
+                                </button>
+                                <button type="button" class='demo-container__btn'>
+                                    <a class='demo-container__link'
+                                        href="https://github.com/tienduy-nguyen/frontend/tree/master/demo">Source
+                                        code</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m-3 c-6 l-2">
+                    <div class="card card-block">
+                        <div class="image-container"
+                            style="background-image: url('https://source.unsplash.com/random/1600x900');">
+                        </div>
+                        <div class="cart-content">
+                            <h5 class="card-title mt-3 mb-3">Landing Page 01</h5>
+                            <p class="card-text">This is demo of landing page courses onlines using html, css, js.
+                            </p>
+                            <div class="demo-container_wrap">
+                                <button type="button" class='demo-container__btn'>
+                                    <a class='demo-container__link'
+                                        href="https://tienduy-nguyen.github.io/frontend/demo/landingpage01">Live
+                                        Demo</a>
+                                </button>
+                                <button type="button" class='demo-container__btn'>
+                                    <a class='demo-container__link'
+                                        href="https://github.com/tienduy-nguyen/frontend/tree/master/demo">Source
+                                        code</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m-3 c-6 l-2">
+                    <div class="card card-block">
+                        <div class="image-container"
+                            style="background-image: url('https://source.unsplash.com/1600x900/?office');">
+                        </div>
+                        <div class="cart-content">
+                            <h5 class="card-title mt-3 mb-3">Landing Page 02</h5>
+                            <p class="card-text">This is demo home of shopping web site using only html & css.</p>
+                            <div class="demo-container_wrap">
+                                <button type="button" class='demo-container__btn'>
+                                    <a class='demo-container__link'
+                                        href="https://tienduy-nguyen.github.io/frontend/demo/landingpage02">Live
+                                        Demo</a>
+                                </button>
+                                <button type="button" class='demo-container__btn'>
+                                    <a class='demo-container__link'
+                                        href="https://github.com/tienduy-nguyen/frontend/tree/master/demo">Source
+                                        code</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m-3 c-6 l-2">
+                    <div class="card card-block">
+                        <div class="image-container"
+                            style="background-image: url('https://source.unsplash.com/1600x900/?beach');">
+                        </div>
+                        <div class="cart-content">
+                            <h5 class="card-title mt-3 mb-3">Landing Page 03</h5>
+                            <p class="card-text">This is demo home of shopping web site using only html & css.</p>
+                            <div class="demo-container_wrap">
+                                <button type="button" class='demo-container__btn'>
+                                    <a class='demo-container__link'
+                                        href="https://tienduy-nguyen.github.io/frontend/demo/landingpage03">Live
+                                        Demo</a>
+                                </button>
+                                <button type="button" class='demo-container__btn'>
+                                    <a class='demo-container__link'
+                                        href="https://github.com/tienduy-nguyen/frontend/tree/master/demo">Source
+                                        code</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS.load('particles-js', 'assets/base/particles.json', function () {
-            console.log('callback - particles.js config loaded');
-        });
-    </script>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'assets/base/particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
 </body>
 
 </html>
