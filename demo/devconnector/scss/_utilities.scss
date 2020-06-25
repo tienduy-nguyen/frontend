@@ -28,6 +28,17 @@
 .text-primary {
   color: $primary-color;
 }
+
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
 //Background
 .bg {
   &-primary {
@@ -127,6 +138,29 @@
   }
   &.alert-info {
     @include set-background($info-color);
+  }
+}
+
+//badge
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: $light-color;
+  color: #333;
+
+  &.badge-primary {
+    @include set-background($primary-color);
+  }
+  &.badge-success {
+    @include set-background($success-color);
+  }
+  &.badge-info {
+    @include set-background($info-color);
+  }
+  &.badge-danger {
+    @include set-background($danger-color);
   }
 }
 
