@@ -1,7 +1,5 @@
-* {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+html {
+  scroll-behavior: smooth;
 }
 body {
   background: #333;
@@ -19,4 +17,27 @@ body {
   background-size: cover;
   background-attachment: fixed;
   min-height: 700px;
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#home-section .home-inner {
+  margin-top: 150px;
+}
+
+#home-section .card-form {
+  opacity: 0.8;
+}
+#home-section .fas {
+  color: #008ed6;
+  background: #fff;
+  padding: 3px;
+  border-radius: 3px;
 }
