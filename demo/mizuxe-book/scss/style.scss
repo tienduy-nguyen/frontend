@@ -1,0 +1,13 @@
+$primary: #3292a6;
+$primary-overlay: rgab(50, 146, 166, 0.8);
+body {
+  margin-top: 105px;
+}
+.navbar {
+  box-shadow: 1px 1px 2px $primary;
+  opacity: 0.9;
+  background: #fff;
+  .nav-item {
+    font-size: 1rem;
+  }
+}
