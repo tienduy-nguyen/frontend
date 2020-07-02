@@ -13,9 +13,9 @@
   <title>Mizuxe Book</title>
 </head>
 
-<body>
+<body id="home">
   <!-- Navbar -->
-  <nav class="nav navbar navbar-expand-md navbar-light fixed-top py-2">
+  <nav class="nav navbar navbar-expand-md navbar-light fixed-top py-2" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
         <img src="img/mlogo.png" width="50" height="50" alt="">
@@ -36,7 +36,7 @@
             <a href="#authors" class="nav-link">Authors</a>
           </li>
           <li class="nav-item">
-            <a href="#Contacts" class="nav-link">Contact</a>
+            <a href="#contacts" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -294,7 +294,7 @@
         </div>
 
         <!-- Author3 -->
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 mb-5">
           <div class="card">
             <div class="card-body">
               <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
@@ -329,7 +329,7 @@
 
 
         <!-- Author4 -->
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 mb-5">
           <div class="card">
             <div class="card-body">
               <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
@@ -361,11 +361,71 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
+
+  <!-- CONTACT -->
+  <section id="contacts" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>Get In Touche</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere elit non dolor
+            dapibus, ut commodo velit egestas. </p>
+          <form action="">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="far fa-envelope-open"></i>
+                </span>
+              </div>
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+              </div>
+              <textarea type="email" class="form-control" placeholder="Message" rows=5></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="btn btn-primary btn-block">
+          </form>
+        </div>
+
+        <div class="col-lg-3 align-self-center d-none d-lg-block">
+          <img src="img/mlogo.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="py-4 bg-primary text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 ml-auto">
+          <p class="text-white">
+            Copyright &copy; <span id="year"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Script -->
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
@@ -374,6 +434,9 @@
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous">
+  </script>
+  <script>
+    $('#year').text(new Date().getFullYear());
   </script>
 </body>
 

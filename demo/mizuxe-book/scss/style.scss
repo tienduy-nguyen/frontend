@@ -1,5 +1,9 @@
 $primary: #3292a6;
 $primary-overlay: rgba(50, 146, 166, 0.8);
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin-top: 78px;
 }
@@ -14,6 +18,8 @@ body {
 }
 
 #showcase {
+  padding-top: 78px;
+  margin-top: -78px;
   background: url('../../img/mountains.jpg');
   position: relative;
   min-height: 600px;
@@ -35,12 +41,15 @@ body {
 }
 
 #authors {
+  padding-top: 78px;
+  margin-top: -78px;
   img {
     margin-top: -50px;
   }
   .card:hover {
     background-color: $primary;
     color: #fff;
+
     .fab {
       color: #fff;
     }
