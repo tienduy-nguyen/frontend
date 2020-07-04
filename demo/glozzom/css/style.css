@@ -60,3 +60,7 @@
   background-position: 0 -300px;
   text-align: center;
 }
+
+.gallery-wrap .col-md-4 {
+  margin-bottom: 10px;
+}
