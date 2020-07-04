@@ -10,15 +10,110 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" src="./img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico">
   <title>Glozzom</title>
 </head>
 
 <body>
 
+  <!-- Nabar -->
+  <nav class="nav navbar navbar-expand-sm bg-dark navbar-dark py-2 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Glozzom</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="#navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="sevices.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION SHOWCASE CAROUSEL -->
+  <section class="showcase">
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- Carousel 1 -->
+        <div class="carousel-item active carousel-image-1">
+          <div class="container">
+            <div class="carousel-caption d-none text-right d-sm-block mb-5">
+              <h1 class="display-3">Heading One</h1>
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget pretium nunc. Fusce porta
+                suscipit fermentum. Quisque a tortor id ante dapibus congue a ut dui.
+              </p>
+              <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel 2 -->
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Heading Two</h1>
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non nulla quis lectus vulputate pretium non
+                nec dui. In vel eros eget quam semper blandit tempor a enim.
+              </p>
+              <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
 
 
+        <!-- Carousel 3 -->
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none text-right d-sm-block mb-5">
+              <h1 class="display-3">Heading Three</h1>
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu metus sit amet dui vulputate
+                malesuada. Donec arcu justo, interdum sed felis vel, venenatis facilisis risus.
+              </p>
+              <a href="#" class="btn btn-danger btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Script -->
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
@@ -28,6 +123,7 @@
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
 
   <script>
     // Get the current year for the copyright
