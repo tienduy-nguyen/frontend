@@ -67,6 +67,30 @@
   margin-bottom: 10px;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* ************************************************************************** */
+/* About  Page*/
+#page-header {
+  margin-top: 55px;
+  height: 260px;
+  background: url('../img/image1.jpg');
+  background-attachment: fixed;
+  background-position: 0 -360px;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+.about-img {
+  margin-top: -50px;
+}
+/* ************************************************************************** */
 /* // Media Reponsive */
 /* // Desktop */
 @media (max-width: 991px) {
