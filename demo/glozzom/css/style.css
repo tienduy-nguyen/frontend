@@ -1,3 +1,5 @@
+/* Home page */
+
 .navbar {
   opacity: 0.9;
 }
@@ -53,7 +55,7 @@
 
 #video-play {
   position: relative;
-  min-height: 400px;
+  min-height: 700px;
   background: url('../img/media.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -63,4 +65,26 @@
 
 .gallery-wrap .col-md-4 {
   margin-bottom: 10px;
+}
+
+/* // Media Reponsive */
+/* // Desktop */
+@media (max-width: 991px) {
+  #video-play {
+    min-height: 500px;
+  }
+}
+
+/* // Tablet */
+@media (max-width: 768px) {
+  #video-play {
+    min-height: 300px;
+  }
+}
+
+/* // Mobile */
+@media (max-width: 576px) {
+  #video-play {
+    min-height: 200px;
+  }
 }

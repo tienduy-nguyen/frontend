@@ -180,8 +180,8 @@
     <div class="row">
       <div class="container p-5 text-primary">
         <h1>See What We Do</h1>
-        <iframe src="http://www.youtube.com/embed/Z5OWdqfAYfw" frameborder="0" height="400px" width="100%"
-          allowfullscreen></iframe>
+        <iframe src="http://www.youtube.com/embed/Z5OWdqfAYfw" frameborder="0" scrolling="no"
+          onload="resizeIframe(this)" width=" 100%" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -353,6 +353,11 @@
       event.preventDefault();
       $(this).ekkoLightbox();
     });
+
+    //Auto height for iframe
+    function resizeIframe(obj) {
+      obj.style.height = $('#video-play').height() - 60 + 'px';
+    }
   </script>
 </body>
 
