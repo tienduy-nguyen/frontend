@@ -93,6 +93,22 @@
 .about-img {
   margin-top: -50px;
 }
+
+/* ************************************************************************** */
+/* Service Page*/
+#faq .card {
+  border: #444;
+}
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
 /* ************************************************************************** */
 /* // Media Reponsive */
 /* // Desktop */
