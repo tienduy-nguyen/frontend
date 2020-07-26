@@ -265,7 +265,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  width: 250px;
+  width: 82px;
   height: 100vh;
   position: fixed;
   margin-top: 65px;
@@ -273,8 +273,11 @@ body {
   box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   z-index: 100;
+  transition: width 0.5s;
 }
-
+.sidebar:hover {
+  width: 250px;
+}
 .sidebar-nav {
   list-style: none;
   padding: 0;
@@ -306,6 +309,27 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+.sidebar-nav-link:hover {
+  background-color: var(--second-bg-color);
+}
+.sidebar-nav-link.active {
+  background-color: var(--second-bg-color);
+  color: var(--danger-color);
+}
+.sidebar-nav-link.active div {
+  border-left: 5px solid var(--danger-color);
+}
+.sidebar-nav-link.active i {
+  color: var(--danger-color);
+  margin-left: -5px;
+}
+.sidebar-expand .sidebar {
+  width: 250px;
+}
+
+.sidebar-expand .wrapper {
+  margin-left: 250px;
+}
 
 /* End sidebar */
 
@@ -318,3 +342,19 @@ body {
 }
 
 /* End wrapper main content */
+
+/* Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.row:after,
+.row:before {
+  box-sizing: border-box;
+}
+
+[class*='col-'] {
+  padding: 10px;
+}

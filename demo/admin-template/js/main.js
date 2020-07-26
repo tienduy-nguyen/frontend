@@ -1,3 +1,8 @@
+function collapseSidebar() {
+  const body = document.getElementsByTagName('body')[0];
+  body.classList.toggle('sidebar-expand');
+}
+
 window.onclick = function (event) {
   openCloseDropdown(event);
 };
