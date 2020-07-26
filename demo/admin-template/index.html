@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="overlay-scrollbar sidebar-expand">
+<body class="overlay-scrollbar">
 
   <!-- Navbar -->
   <div class="navbar">
@@ -27,7 +27,9 @@
         </a>
       </li>
       <li class="nav-item">
-        <img src="img/logo.png" class="logo logo-light" alt="Logo">
+        <a href="index.html">
+          <img src="img/logo.png" class="logo" alt="Logo">
+        </a>
       </li>
     </ul>
 
@@ -37,6 +39,12 @@
     </form>
 
     <ul class="navbar-nav navbar-right">
+      <li class="nav-item">
+        <div class="nav-link" onclick="switchTheme()">
+          <i class="fas fa-moon dark-icon"></i>
+          <i class="fas fa-sun light-icon"></i>
+        </div>
+      </li>
       <a class="nav-link">
         <i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
         <span class="navbar-badge">15</span>
@@ -375,42 +383,217 @@
 
   <!-- Main content -->
   <div class="wrapper">
-    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, voluptatem!</h1>
-    <br>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat sequi, distinctio libero facilis numquam in nisi
-    nam impedit ab vel perspiciatis quidem aliquid, maxime minus neque! Quod dolorem minus itaque esse repudiandae,
-    quidem tempora, maiores voluptatibus ipsam sapiente tenetur corporis corrupti enim ea unde vero voluptas alias ex in
-    quis consequatur totam dignissimos. Ad placeat veniam nesciunt vero doloribus! Eveniet reiciendis similique,
-    adipisci harum inventore blanditiis, maxime, at quaerat et quos consequuntur error nam vero? Ipsam ea rem maxime
-    odio nihil aspernatur quos distinctio placeat magnam cumque obcaecati, eius veritatis impedit quae aliquam dolorem
-    sit. Cupiditate, itaque exercitationem veniam sequi accusamus at illo, dicta maiores aliquam dignissimos voluptatum
-    corporis consectetur quos possimus repellat quibusdam molestiae explicabo harum reiciendis rerum quis porro
-    accusantium neque. Voluptatibus temporibus iure, expedita placeat nostrum eveniet assumenda fugiat sint! Iusto, cum
-    a accusantium in, velit ipsum deserunt reprehenderit praesentium expedita ad consequatur unde, illum possimus
-    repellat vitae dolorem repellendus doloribus dolore maxime similique rem autem eius distinctio. Est neque magnam
-    inventore, beatae explicabo similique voluptatem facere ipsa reprehenderit impedit vitae quibusdam sapiente
-    voluptates! Suscipit quos excepturi optio laudantium quas eveniet? Ipsum blanditiis aspernatur culpa soluta
-    dignissimos voluptate eos, cum quae placeat provident nam ex at, sunt quas reiciendis eveniet quidem. Temporibus
-    iusto voluptatem ex eaque delectus molestiae, adipisci sapiente reprehenderit unde maiores natus rerum in voluptate
-    repellendus, voluptas accusamus doloribus exercitationem? Alias, error! Corporis perspiciatis quisquam vel nihil
-    quidem natus soluta eos sint voluptas assumenda eligendi, quaerat deleniti totam ipsum saepe dolore perferendis
-    magnam nostrum consectetur labore ratione fuga. Soluta consequuntur at voluptatum id accusantium saepe aliquid nulla
-    fugiat molestiae, necessitatibus sed voluptate in sit aperiam praesentium! Placeat fuga, perspiciatis earum at
-    laboriosam voluptate sed tempora est laudantium ex iste natus maxime nisi nulla iusto! Corporis deleniti neque ipsum
-    itaque excepturi quia aut incidunt quisquam nihil velit harum eius assumenda totam dolorem animi cumque expedita,
-    magni cum voluptatum repellat aperiam. Numquam facere aperiam commodi sint quam asperiores earum deserunt aliquam
-    modi voluptatibus eius hic doloremque ea cupiditate minus illo quos officia, error mollitia dignissimos odio iure
-    accusantium quod. Dicta assumenda impedit odit minus earum quod, voluptatem iure qui. Repellendus recusandae
-    similique laudantium labore a ea eum molestiae dolor impedit ipsum vero, deserunt ipsam eius harum nihil voluptate?
-    Corrupti aut vitae atque animi repellat culpa adipisci qui quod modi saepe dolore repellendus libero ipsa, esse
-    nobis ad nulla magni earum architecto numquam voluptate officiis commodi alias. Beatae veniam neque, numquam, ab
-    corporis rerum possimus porro unde quaerat rem temporibus totam sunt laudantium molestias id illum inventore
-    mollitia quam similique. Id corporis eos perferendis aperiam soluta mollitia officia dolores expedita quod? Tempore
-    facilis pariatur quod necessitatibus corporis vel non eius dolorum itaque magni earum, accusantium a aperiam
-    reprehenderit animi recusandae cumque, dolorem velit perferendis expedita dolore quaerat? Cupiditate odio excepturi,
-    voluptatem debitis fugit unde est ullam provident repudiandae itaque laborum doloribus eius sunt in aspernatur autem
-    voluptate placeat incidunt molestias, error dolores nulla ea. Deleniti iure molestiae temporibus quos voluptatum
-    debitis aliquam fuga eligendi ea. Dolorum, quae nulla.
+
+    <div class="row">
+      <!-- Card todo -->
+      <div class="col-3 col-m-6 col-sm-6">
+        <div class="counter bg-primary">
+          <p>
+            <i class="fas fa-tasks"></i>
+          </p>
+          <h3>100+</h3>
+          <p>To do</p>
+        </div>
+      </div>
+
+      <!-- Card inprogress -->
+      <div class="col-3 col-m-6 col-sm-6">
+        <div class="counter bg-warning">
+          <p>
+            <i class="fas fa-spinner"></i>
+          </p>
+          <h3>100+</h3>
+          <p>In progress</p>
+        </div>
+      </div>
+
+      <!-- Card Completed -->
+      <div class="col-3 col-m-6 col-sm-6">
+        <div class="counter bg-success">
+          <p>
+            <i class="fas fa-check-circle"></i>
+          </p>
+          <h3>100+</h3>
+          <p>Completed</p>
+        </div>
+      </div>
+
+      <!-- Card issue -->
+      <div class="col-3 col-m-6 col-sm-6">
+        <div class="counter bg-danger">
+          <p>
+            <i class="fas fa-bug"></i>
+          </p>
+          <h3>100+</h3>
+          <p>Issues</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="row">
+      <div class="col-8 col-m-12 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>
+              Table
+            </h3>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="card-content">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Project</th>
+                  <th>Manager</th>
+                  <th>Status</th>
+                  <th>Due date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>React</td>
+                  <td>Felix Adam</td>
+                  <td>
+                    <span class="dot">
+                      <i class="bg-success"></i>
+                      Completed
+                    </span>
+                  </td>
+                  <td>17/07/2020</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Vue</td>
+                  <td>Levin Smith</td>
+                  <td>
+                    <span class="dot">
+                      <i class="bg-warning"></i>
+                      In progress
+                    </span>
+                  </td>
+                  <td>18/07/2020</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Laravel</td>
+                  <td>Eric Marville</td>
+                  <td>
+                    <span class="dot">
+                      <i class="bg-warning"></i>
+                      In progress
+                    </span>
+                  </td>
+                  <td>17/07/2020</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Django</td>
+                  <td>Alex Eswill</td>
+                  <td>
+                    <span class="dot">
+                      <i class="bg-danger"></i>
+                      Delayed
+                    </span>
+                  </td>
+                  <td>07/07/2020</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>MEAN</td>
+                  <td>John Evan</td>
+                  <td>
+                    <span class="dot">
+                      <i class="bg-primary"></i>
+                      Pending
+                    </span>
+                  </td>
+                  <td>20/08/2020</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>MERN</td>
+                  <td>Robert Van</td>
+                  <td>
+                    <span class="dot">
+                      <i class="bg-primary"></i>
+                      Pending
+                    </span>
+                  </td>
+                  <td>20/08/2020</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-m-12 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>
+              Progress bar
+            </h3>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="card-content">
+            <div class="progress-wrapper">
+              <p>
+                Less than 1 hour
+                <span class="float-right">50%</span>
+              </p>
+              <div class="progress">
+                <div class="bg-success" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <p>
+                1 - 3 hours
+                <span class="float-right">60%</span>
+              </p>
+              <div class="progress">
+                <div class="bg-primary" style="width:60%"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <p>
+                More than 3 hours
+                <span class="float-right">40%</span>
+              </p>
+              <div class="progress">
+                <div class="bg-warning" style="width:40%"></div>
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <p>
+                More than 6 hours
+                <span class="float-right">20%</span>
+              </p>
+              <div class="progress">
+                <div class="bg-danger" style="width:20%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="row">
+      <div class="col-12 col-m-12 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h3>
+              Chartjs
+            </h3>
+          </div>
+          <div class="card-content">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
