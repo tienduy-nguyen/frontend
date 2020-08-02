@@ -1,2 +1,3 @@
-# site-demo
-[site](https://tienduy-nguyen.github.io/frontend/)
+# Demo front-end
+
+Working in progress ...
